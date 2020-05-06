@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import api from '../../services/api'
-import './styles.css';
+// import socketIo from '../../services/socket-io'
+import io from 'socket.io-client'
+import './styles.css'
 
 import more from '../../assets/more.svg'
 import like from '../../assets/like.svg'
@@ -13,8 +15,26 @@ class Feed extends Component {
    }
 
    async componentDidMount() {
+      this.registerToSocket()
       const response = await api.get('posts')
       this.setState({ feed: response.data })
+   }
+
+   registerToSocket = () => {
+      const socket = io('http://192.168.1.101:3333')
+      // const socket = socketIo
+
+      socket.on('post', newPost => {
+         this.setState({ feed: [newPost, ... this.state.feed ] })
+      })
+
+      socket.on('like', likePost => {
+         this.setState({ 
+            feed: this.state.feed.map(post =>
+               post._id === likePost._id ? likePost : post   
+            ) 
+         })
+      })
    }
 
    handleLike = id => {
