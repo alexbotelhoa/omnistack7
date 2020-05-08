@@ -39,6 +39,8 @@ const App: () => React$Node = () => {
             </View>
           )}
           <View style={styles.body}>
+
+
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
@@ -46,25 +48,9 @@ const App: () => React$Node = () => {
                 screen and then come back to see your edits.
               </Text>
             </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
+
+
+            {/* <LearnMoreLinks /> */}
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -81,7 +67,8 @@ const styles = StyleSheet.create({
     right: 0,
   },
   body: {
-    backgroundColor: Colors.white,
+    // backgroundColor: Colors.white,
+    backgroundColor: '#333'
   },
   sectionContainer: {
     marginTop: 32,

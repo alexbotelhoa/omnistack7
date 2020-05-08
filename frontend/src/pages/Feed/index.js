@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import api from '../../services/api'
-// import socketIo from '../../services/socket-io'
 import io from 'socket.io-client'
 import './styles.css'
 
