@@ -1,4 +1,0 @@
-#Sat May 09 13:07:28 BRT 2020
-base.0=C\:\\xampp\\htdocs\\omnistack7\\modelo\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
