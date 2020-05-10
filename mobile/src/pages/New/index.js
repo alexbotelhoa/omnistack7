@@ -1,10 +1,14 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 
 import styles from './styles';
 
 const New = () => {
-  return <View />;
+  return (
+    <View>
+      <Text>New</Text>
+    </View>
+  );
 }
 
 export default New;
