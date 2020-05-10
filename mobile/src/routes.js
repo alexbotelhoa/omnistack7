@@ -1,7 +1,7 @@
-import React from 'react';
-import {StyleSheet, View, Text} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import React from 'react'
+import { StyleSheet, View, Text } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
 
 function HomeScreen() {
   return (
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   }
 });
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator()
 
 function Routes() {
   return (
@@ -28,7 +28,7 @@ function Routes() {
         <Stack.Screen name="Home" component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
-  );
+  )
 }
 
-export default Routes;
+export default Routes
