@@ -1,34 +1,21 @@
 import React from 'react'
-import { StyleSheet, View, Text } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
-function HomeScreen() {
-  return (
-    <View style={styles.scrollView}>
-      <Text>Home Screen</Text>
-    </View>
-  )
+import Feed from './pages/Feed'
+import New from './pages/New'
+
+const AppStack = createStackNavigator();
+
+export default function Routes() {
+   return (
+      <NavigationContainer>
+
+         <AppStack.Navigator>
+            <AppStack.Screen name="Feed" component={Feed} />
+            <AppStack.Screen name="New" component={New} />
+         </AppStack.Navigator>
+
+      </NavigationContainer>
+   );
 }
-
-const styles = StyleSheet.create({
-  scrollView: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  }
-});
-
-const Stack = createStackNavigator()
-
-function Routes() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  )
-}
-
-export default Routes
