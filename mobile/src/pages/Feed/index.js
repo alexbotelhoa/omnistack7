@@ -1,14 +1,12 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-import styles from './styles';
+import Styles from './styles';
 
-const Feed = () => {
+export default Feed = () => {
   return (
     <View>
-      <Text style={styles.container}>Feed</Text>
+      <Text style={Styles.container}>Feed</Text>
     </View>
   );
 }
-
-export default Feed;

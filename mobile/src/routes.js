@@ -4,7 +4,7 @@ import { Image, TouchableOpacity } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
-// import Styles from './styles'
+import Styles from './styles'
 import Feed from './pages/Feed'
 import New from './pages/New'
 
@@ -17,7 +17,6 @@ function feedStyles({ navigation }) {
     headerRight: () => (
       <TouchableOpacity 
         style={{ marginRight: 20 }}
-        // onPress={() => alert('This is a button!')}>
         onPress={() => navigation.navigate('New')}>
         <Image source={camera} />
       </TouchableOpacity>
@@ -40,7 +39,7 @@ const AppStack = createStackNavigator()
 export default function Routes() {
   return (
     <NavigationContainer>
-        <AppStack.Navigator initialRouteName="Feed">
+        <AppStack.Navigator initialRouteName="Feed" mode="modal">
           <AppStack.Screen name="Feed" component={Feed} options={feedStyles} />
           <AppStack.Screen name="New" component={New} options={newStyles} />
         </AppStack.Navigator>

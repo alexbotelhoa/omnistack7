@@ -1,14 +1,12 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-import styles from './styles';
+import Styles from './styles';
 
-const New = () => {
+export default New = () => {
   return (
     <View>
-      <Text>New</Text>
+      <Text style={Styles.container}>New</Text>
     </View>
   );
 }
-
-export default New;
