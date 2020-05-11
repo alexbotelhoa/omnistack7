@@ -19,9 +19,29 @@ export default Feed = () => {
     if (loading) return;
     setLoading(true)
 
+    registerToSocket()
     const response = await api.get('posts')
     setFeeds([ ...feeds, ...response.data ])
   } 
+
+  function registerToSocket () {
+    const socket = io('http://10.0.2.2:3333')
+
+    socket.on('post', newPost => {
+       setFeeds([newPost, ...feeds])
+    })
+
+    socket.on('like', likePost => {
+       setFeeds(feeds.map(post =>
+            post._id === likePost._id ? likePost : post   
+          ) 
+       )
+    })
+ }
+
+  function handleLike (id) {
+    api.post(`posts/${id}/like`)
+  }
 
   useEffect(() => {
     loadFeeds();
@@ -49,7 +69,7 @@ export default Feed = () => {
               <View style={Styles.actions}>
                 <TouchableOpacity
                   style={Styles.action}
-                  onPress={() => {}}
+                  onPress={() => {handleLike(feed._id)}}
                 >
                   <Image source={like} />
                 </TouchableOpacity>
