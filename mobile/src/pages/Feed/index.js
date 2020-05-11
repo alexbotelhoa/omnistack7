@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import io from 'socket.io-client'
 import api from '../../services/api'
 import { View, Text, Image, FlatList, TouchableOpacity } from 'react-native';
 
@@ -42,26 +43,33 @@ export default Feed = () => {
               <Image source={more} />
             </View>
 
-            <Image style={Styles.feedImage} source={{ uri: `http://10.0.2.2:3333/${feed.image}` }} />
+            <Image style={Styles.feedImage} source={{ uri: `http://10.0.2.2:3333/files/${feed.image}` }} />
 
             <View style={Styles.feedItemFooter}>
               <View style={Styles.actions}>
                 <TouchableOpacity
+                  style={Styles.action}
                   onPress={() => {}}
                 >
                   <Image source={like} />
                 </TouchableOpacity>
                 <TouchableOpacity
+                  style={Styles.action}
                   onPress={() => {}}
                 >
                   <Image source={comment} />
                 </TouchableOpacity>
                 <TouchableOpacity
+                  style={Styles.action}
                   onPress={() => {}}
                 >
                   <Image source={send} />
                 </TouchableOpacity>
               </View>
+
+              <Text style={Styles.likes}>{feed.likes} curtidas</Text>
+              <Text style={Styles.description}>{feed.description}</Text>
+              <Text style={Styles.hashtags}>{feed.hashtags}</Text>
             </View>
           </View>
         )}
