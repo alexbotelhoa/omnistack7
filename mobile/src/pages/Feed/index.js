@@ -11,41 +11,37 @@ import comment from '../../assets/comment.png'
 import send from '../../assets/send.png'
 
 export default Feed = () => {
-
   const [feeds, setFeeds] = useState([]);
-  const [loading, setLoading] = useState(false);
 
   async function loadFeeds() {
-    if (loading) return;
-    setLoading(true)
-
-    registerToSocket()
-    const response = await api.get('posts')
-    setFeeds([ ...feeds, ...response.data ])
+    const res = await api.get('posts')
+    setFeeds(res.data)
   } 
 
   function registerToSocket () {
-    const socket = io('http://10.0.2.2:3333')
+    const socket = io('http://10.0.2.2:3333/')
 
     socket.on('post', newPost => {
        setFeeds([newPost, ...feeds])
     })
 
-    socket.on('like', likePost => {
-       setFeeds(feeds.map(post =>
-            post._id === likePost._id ? likePost : post   
-          ) 
-       )
+    socket.on('like', likePost => { 
+      // if (feeds.length > 0) {
+        setFeeds(feeds.map(
+          post => post._id == likePost._id ? likePost : post            
+        ))
+      // }
     })
- }
+  }
+  registerToSocket()
+
+  useEffect(() => {
+    loadFeeds()
+  }, []);
 
   function handleLike (id) {
     api.post(`posts/${id}/like`)
   }
-
-  useEffect(() => {
-    loadFeeds();
-  }, []);
 
   return (
     <View style={Styles.container}>
@@ -69,7 +65,7 @@ export default Feed = () => {
               <View style={Styles.actions}>
                 <TouchableOpacity
                   style={Styles.action}
-                  onPress={() => {handleLike(feed._id)}}
+                  onPress={() => handleLike(feed._id)}
                 >
                   <Image source={like} />
                 </TouchableOpacity>
