@@ -45,22 +45,33 @@ export default class New extends Component {
                     name: `${prefix}.${ext}`
                 }
 
-                this.setState({ preview, image })
+                alert({ image });
+
+                this.setState({ image })
+                this.setState({ preview })
             }
         })
     }
 
     handleSubmit = async () => {
         const data = new FormData();
-        data.append('image', this.state.image)
+        // data.append('image', this.state.image)
+        data.append('image', "lu.jpg")
         data.append('author', this.state.author)
         data.append('place', this.state.place)
         data.append('description', this.state.description)
         data.append('hashtags', this.state.hashtags)
 
-        await api.post('posts', data)
+        // try {
+        //   await api.post('posts', data)
+        // } catch (e) {
+        //   alert(e.message);
+        // }
 
-        this.props.navigation.navigate('Feed')
+        // await api.post('posts', data)
+        // alert(this.state.image);
+
+        // this.props.navigation.navigate('Feed')
     }
 
     render() {
@@ -109,7 +120,7 @@ export default class New extends Component {
                     onChangeText={hashtags => this.setState({ hashtags })}
                 />
 
-                <TouchableOpacity style={Styles.shareButton} onPress={this.handleSubmit} >
+                <TouchableOpacity style={Styles.shareButton} onPress={() => this.handleSubmit()} >
                     <Text style={Styles.shareButtonText}>Compartilhar imagem</Text>
                 </TouchableOpacity>
             </View>

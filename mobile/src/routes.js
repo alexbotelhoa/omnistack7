@@ -39,7 +39,7 @@ const AppStack = createStackNavigator()
 export default function Routes() {
   return (
     <NavigationContainer>
-        <AppStack.Navigator initialRouteName="New" mode="modal">
+        <AppStack.Navigator initialRouteName="Feed" mode="modal">
           <AppStack.Screen name="Feed" component={Feed} options={feedStyles} />
           <AppStack.Screen name="New" component={New} />
         </AppStack.Navigator>
