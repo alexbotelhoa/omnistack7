@@ -19,6 +19,7 @@ export default class New extends Component {
         ImagePicker.showImagePicker({
             title: 'Selecionar imagem'
         }, upload => {
+          // console.log(upload)
             if (upload.error) {
                 console.log(error)
             } else if (upload.didCancel) {
@@ -39,20 +40,20 @@ export default class New extends Component {
                     ext = 'jpg'
                 }
 
-                const image = {
-                    uri: upload.uri,
-                    type: upload.type,
-                    name: `${prefix}.${ext}`
-                }
+                // const image = {
+                //     uri: upload.uri,
+                //     type: upload.type,
+                //     name: `${prefix}.${ext}`
+                // }
 
-                this.setState({ preview, image })
+                this.setState({ image: upload })
+                this.setState({ preview })
             }
         })
     }
 
     handleSubmit = async () => {
         const data = new FormData();
-
         data.append('image', this.state.image)
         data.append('author', this.state.author)
         data.append('place', this.state.place)
@@ -62,6 +63,38 @@ export default class New extends Component {
         await api.post('posts', data)
 
         // this.props.navigation.navigate('Feed')
+    }
+
+
+
+    createFormData = () => {
+      const data = new FormData()
+      data.append('image', JSON.stringify(this.state.image))
+      // data.append('image', this.state.image)
+      data.append('author', this.state.author)
+      data.append('place', this.state.place)
+      data.append('description', this.state.description)
+      data.append('hashtags', this.state.hashtags)
+    
+      return data
+    }
+
+    handleUploadPhoto = () => {
+      fetch("http://10.0.2.2:3333/posts", {
+        method: "POST",
+        body: this.createFormData()
+        // ,file: JSON.stringify(this.state.image)
+      })
+        .then(response => response.json())
+        .then(response => {
+          console.log("upload succes", response)
+          alert("Upload success!")
+          this.setState({ photo: null })
+        })
+        .catch(error => {
+          console.log("upload error", error)
+          alert("Upload failed!")
+        })
     }
 
     render() {
@@ -110,7 +143,8 @@ export default class New extends Component {
                     onChangeText={hashtags => this.setState({ hashtags })}
                 />
 
-                <TouchableOpacity style={Styles.shareButton} onPress={() => this.handleSubmit()} >
+                {/* <TouchableOpacity style={Styles.shareButton} onPress={() => this.handleSubmit()} > */}
+                <TouchableOpacity style={Styles.shareButton} onPress={() => this.handleUploadPhoto()} >
                     <Text style={Styles.shareButtonText}>Compartilhar imagem</Text>
                 </TouchableOpacity>
             </View>
