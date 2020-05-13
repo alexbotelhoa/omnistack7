@@ -45,31 +45,21 @@ export default class New extends Component {
                     name: `${prefix}.${ext}`
                 }
 
-                alert({ image });
-
-                this.setState({ image })
-                this.setState({ preview })
+                this.setState({ preview, image })
             }
         })
     }
 
     handleSubmit = async () => {
         const data = new FormData();
-        // data.append('image', this.state.image)
-        data.append('image', "lu.jpg")
+
+        data.append('image', this.state.image)
         data.append('author', this.state.author)
         data.append('place', this.state.place)
         data.append('description', this.state.description)
         data.append('hashtags', this.state.hashtags)
 
-        // try {
-        //   await api.post('posts', data)
-        // } catch (e) {
-        //   alert(e.message);
-        // }
-
-        // await api.post('posts', data)
-        // alert(this.state.image);
+        await api.post('posts', data)
 
         // this.props.navigation.navigate('Feed')
     }
