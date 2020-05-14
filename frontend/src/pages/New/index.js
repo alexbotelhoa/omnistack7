@@ -31,7 +31,7 @@ class New extends Component {
 
       await api.post('posts', data)
 
-      // this.props.history.push('/')
+      this.props.history.push('/')
    }
 
    render() {
