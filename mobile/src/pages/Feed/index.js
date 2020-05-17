@@ -77,10 +77,8 @@ export default class Feed extends Component {
                               <Text style={Styles.hashtags}>{item.hashtags}</Text>
                           </View>
                       </View>
-
                   )}
               />
-
           </View>
       )
   }
