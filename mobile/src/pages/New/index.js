@@ -9,10 +9,10 @@ export default class New extends Component {
     state = {
         preview: null,
         image: null,
-        author: 'foo2',
-        place: 'foo2',
-        description: 'foo2',
-        hashtags: 'foo2'
+        author: '',
+        place: '',
+        description: '',
+        hashtags: '',
     }
 
     handleSelectImage = () => {
