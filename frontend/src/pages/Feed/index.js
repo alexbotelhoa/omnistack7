@@ -21,7 +21,6 @@ class Feed extends Component {
 
    registerToSocket = () => {
       const socket = io('http://192.168.1.101:3333')
-      // const socket = socketIo
 
       socket.on('post', newPost => {
          this.setState({ feed: [newPost, ... this.state.feed ] })
