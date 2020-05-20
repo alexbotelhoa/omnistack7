@@ -9,7 +9,7 @@ const app = express()
 const server = require('http').Server(app)
 const io = require('socket.io')(server)
 
-mongoose.connect('mongodb+srv://admin:200679@cluster0-bbus6.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://admin:200679@cluster0-bbus6.mongodb.net/omnistack7?retryWrites=true&w=majority', {
    useNewUrlParser: true,
    useUnifiedTopology: true
 })
