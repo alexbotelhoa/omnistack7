@@ -1,5 +1,8 @@
+#Particular
+./uploads
 *.code-workspace
 ./backup
+*.keystore
 
 # Logs
 logs

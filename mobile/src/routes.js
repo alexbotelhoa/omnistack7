@@ -28,7 +28,6 @@ function feedStyles({ navigation }) {
 }
 
 const newStyles = {
-  // headerTitle: 'Nova publicação',
   headerTintColor: '#000',
   headerTitleAlign: 'center',
   headerBackTitle: null
