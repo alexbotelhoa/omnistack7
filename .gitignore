@@ -3,6 +3,7 @@
 *.code-workspace
 ./backup
 *.keystore
+*.psd
 
 # Logs
 logs
