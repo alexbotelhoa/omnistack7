@@ -1,16 +1,39 @@
 <h1 align="center">
- :camera: Clone do Feed do Instagram
+ :camera: InstaRocket
 </h1>
 
+<h4 align="center">
+  🚀 Semana OmniStack 7.0
+</h4>
+
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/alexbotelhoa/omnistack7">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/alexbotelhoa/omnistack7">
+  
+  <a href="https://github.com/alexbotelhoa/omnistack7/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/alexbotelhoa/omnistack7">
+  </a>
+
+  <a href="https://github.com/alexbotelhoa/omnistack7/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/alexbotelhoa/omnistack7">
+  </a>
+
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+</p>
+
+<p align="center">
+    <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#computer-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#computer_mouse-backend">Backend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#computer-frontend">Frontend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#iphone-mobile">Mobile</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#memo-licença">Licença</a>
+</p>
 
 <div align="center"> 
      <img alt="Twitter" src="https://user-images.githubusercontent.com/44276302/81947844-67c9b100-95d7-11ea-9320-42a139a983f9.jpg" />
-</div> 
-
-<p align="center">
-  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#information_source-como-usar">Como Usar</a>
-</p>
+</div>
 
 ## :rocket: Tecnologias
 
@@ -31,9 +54,13 @@
 -  [VS Code](https://code.visualstudio.com/)
 -  [React Native](https://reactnative.dev/)
 
-## :information_source: Como usar 
+## :computer: Projeto
 
-### :computer_mouse: Rodando o backend: 
+O InstaRocket é um projeto clone do Instagram que visa compartilhar fotos e criar um interatividade entre as pessoas.
+
+## :information_source: Desenvolvimento
+
+### :computer_mouse: Backend: 
 
 ```bash
 # Clone o Repositório
@@ -46,7 +73,7 @@ $ yarn
 $ yarn dev 
 ```
 
-### :computer: Rodando o Frontend: 
+### :computer: Frontend: 
 
 ```bash
 #Vá até a pasta frontend 
@@ -57,7 +84,7 @@ $ yarn
 $ yarn start
 ```
 
-### :iphone: Rodando o Mobile:
+### :iphone: Mobile:
 
 ```bash
 #Vá até a pasta mobile 
@@ -69,3 +96,9 @@ $ react-native run-android
 #iOS 
 $ react-native run-ios
 ```
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
+---
