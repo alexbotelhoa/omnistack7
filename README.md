@@ -66,11 +66,11 @@ O InstaRocket é um projeto clone do Instagram que visa compartilhar fotos e cri
 # Clone o Repositório
 $  git clone https://github.com/alexbotelhoa/omnistack7.git
 # Va até o diretório do backend, e instale suas dependências
-$ cd omnistack/backend
+$ cd backend
 # Instale as dependências
 $ yarn 
 # Rode o backend 
-$ yarn dev 
+$ yarn start 
 ```
 
 ### :computer: Frontend: 
