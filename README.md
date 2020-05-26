@@ -1,5 +1,5 @@
 <h1 align="center">
-      <br> :camera: Clone do Feed do Instagram<br/>
+ :camera: Clone do Feed do Instagram
 </h1>
 
 
