@@ -30,7 +30,7 @@
     <a href="#iphone-mobile">Mobile</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#memo-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="https://www.linkedin.com/in/alex-botelho-almeida/">
-      <img src="https://img.icons8.com/color/28/000000/linkedin.png"/>
+      <img src="https://img.icons8.com/color/26/000000/linkedin.png"/>
     </a>
     <a href="https://www.youtube.com/channel/UC6N_L0nZWRjcym8bnChKppw/">
       <img src="https://img.icons8.com/color/32/000000/youtube-play.png"/>
