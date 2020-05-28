@@ -7,7 +7,9 @@
 </h4>
 
 <p align="center">
+ <img alt="GitHub language count" src="https://img.shields.io/npm/v/express">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/alexbotelhoa/omnistack7">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/alexbotelhoa/omnistack7">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/alexbotelhoa/omnistack7">
   
@@ -20,6 +22,8 @@
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/alexbotelhoa?style=social">
+  <img alt="Twitter Follow" src="https://img.shields.io/linkedin/follow/alexbotelhoa?style=social">
 </p>
 
 <p align="center">
