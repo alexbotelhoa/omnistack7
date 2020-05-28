@@ -23,18 +23,15 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/alex-botelho-almeida/">
-    <img src="https://img.icons8.com/color/48/000000/linkedin.png"/>
-  </a>
-</p>
-
-<p align="center">
     <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#computer-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#computer_mouse-backend">Backend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#computer-frontend">Frontend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#iphone-mobile">Mobile</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#memo-licença">Licença</a>
+    <a href="#memo-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/alex-botelho-almeida/">
+      <img src="https://img.icons8.com/color/32/000000/linkedin.png"/>
+    </a>
 </p>
 
 <div align="center"> 
