@@ -43,7 +43,7 @@
 
 ## :computer: Projeto
 
-O InstaRocket é um projeto clone do Instagram que visa compartilhar fotos e criar um interatividade entre as pessoas.
+O InstaRocket é um projeto clone do Instagram que visa compartilhar fotos e criar uma interatividade entre as pessoas.
 
 
 ## :rocket: Tecnologias
