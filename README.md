@@ -23,8 +23,8 @@
 </p>
 
 <p align="center">
-    <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#computer-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#computer_mouse-backend">Backend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#computer-frontend">Frontend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#iphone-mobile">Mobile</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -40,6 +40,11 @@
 <div align="center"> 
      <img alt="Twitter" src="https://user-images.githubusercontent.com/44276302/81947844-67c9b100-95d7-11ea-9320-42a139a983f9.jpg" />
 </div>
+
+## :computer: Projeto
+
+O InstaRocket é um projeto clone do Instagram que visa compartilhar fotos e criar um interatividade entre as pessoas.
+
 
 ## :rocket: Tecnologias
 
@@ -59,10 +64,6 @@
 -  [React Router](https://github.com/ReactTraining/react-router)
 -  [VS Code](https://code.visualstudio.com/)
 -  [React Native](https://reactnative.dev/)
-
-## :computer: Projeto
-
-O InstaRocket é um projeto clone do Instagram que visa compartilhar fotos e criar um interatividade entre as pessoas.
 
 ## :information_source: Desenvolvimento
 
